@@ -7,6 +7,7 @@ import { renderDppivAssay, initDppivAssay, collectDppivData } from './assays/dpp
 import { renderBiofilmAssay, initBiofilmAssay, collectBiofilmData } from './assays/biofilmAssay.js';
 import { renderViabilityAssay, initViabilityAssay, collectViabilityData } from './assays/viabilityAssay.js';
 import { renderAntiInflammatoryAssay, initAntiInflammatoryAssay, collectAntiInflammatoryData } from './assays/antiInflammatoryAssay.js';
+import frontPageImg from '../assets/front_page_image.png';
 
 const ASSAY_RENDERERS = {
   mic: { render: renderMicAssay, init: initMicAssay, collect: collectMicData },
@@ -31,7 +32,7 @@ export function renderRightPanel() {
 function renderWelcome() {
   return `
     <div class="welcome-state" id="welcome-state">
-      <img src="/front_page_image.png" alt="Marbio Research" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;" />
+      <img src="${frontPageImg}" alt="Marbio Research" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;" />
       <h2 class="welcome-state__title">Welcome to Marbio Assay Analyzer</h2>
       <p class="welcome-state__text">
         Select an assay type from the left panel to begin configuring your experiment. 

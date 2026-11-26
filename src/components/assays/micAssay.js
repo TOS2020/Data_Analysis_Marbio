@@ -7,6 +7,7 @@
  * - Choose concentration units
  */
 import { BACTERIAL_STRAINS, CONCENTRATION_UNITS } from '../../config/assayTypes.js';
+import micLayoutImg from '../../assets/mic_layout.png';
 
 const SAMPLES_PER_SET = 5;
 
@@ -82,7 +83,7 @@ export function renderMicAssay() {
           Plate Set Configuration
         </h3>
         <div style="margin-bottom: 20px;">
-          <img src="/mic_layout.png" alt="MIC Plate Layout" style="max-width: 100%; height: auto; border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.1);" />
+          <img src="${micLayoutImg}" alt="MIC Plate Layout" style="max-width: 100%; height: auto; border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.1);" />
         </div>
         <div class="input-group">
           <label class="input-label" for="mic-set-count">

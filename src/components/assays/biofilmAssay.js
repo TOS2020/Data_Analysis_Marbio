@@ -8,6 +8,7 @@
  * - Input a 3x8 grid of sample IDs for each plate
  */
 import { CONCENTRATION_UNITS } from '../../config/assayTypes.js';
+import biofilmLayoutImg from '../../assets/biofilm_layout.png';
 
 export function renderBiofilmAssay() {
   const concentrationOptions = CONCENTRATION_UNITS.map(unit =>
@@ -110,7 +111,7 @@ export function renderBiofilmAssay() {
           Plate Configuration &amp; Sample IDs
         </h3>
         <div style="margin-bottom: 20px;">
-          <img src="/biofilm_layout.png" alt="Biofilm Plate Layout" style="max-width: 100%; height: auto; border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.1);" />
+          <img src="${biofilmLayoutImg}" alt="Biofilm Plate Layout" style="max-width: 100%; height: auto; border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.1);" />
         </div>
         <div class="plate-grid" id="biofilm-plate-grid" style="grid-template-columns: 1fr;">
           <!-- Plate tables will be rendered here dynamically -->
